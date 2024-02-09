@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKJACK</title>
+    <link rel= "stylesheet" href="./blackjack.css">
+    <link rel="icon" href="./images/blackicon.jpg"></link>
+    <script src="https://kit.fontawesome.com/55cde1bf03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="result">
+          <h1 id="resvalue"></h1>
+    </div>
+        <div class="intro">
+        <header class="header">
+            <div id="person-star-wrapper">
+               <img src="./images/avatar.jpg" alt="" style="cursor: pointer;" id="person" >
+            <img src="./images/star.png" alt="No-image" id="star">
+            </div>     
+        <i class="fa-solid fa-gear fa-3x" style="border: 2px solid gold; cursor: pointer;"></i>
+        <i class="fa-solid fa-envelope fa-3x"  style="border: 2px solid gold;
+        cursor: pointer;"></i>
+        <div id="mustache-wrapper">
+        </div>
+            <div id="gem">
+                <img src="./images/blue-diamond.png" alt="" id="diamond">
+                <div class="span">
+                  <span id="gem-val">10</span>
+                </div>
+                <img src="./images/plus-symbol.png" style="cursor: pointer;" alt="" id="plus">
+                </div>
+            <div id="currency">
+                <div id="coin">
+                    </div>
+                <div class="span">
+                    <span id="gem-val2">200</span>
+                </div>
+                <img src="./images/plus-symbol.png" style="cursor: pointer;" alt="" id="plus">
+                </div>
+        </header>
+       
+        <div class="btns">
+        <button id="newgame" class="game" style="cursor: pointer;">NEWGAME</button>
+        <button class="game" style="cursor: pointer;">RESUME</button>
+        <button class="game" style="cursor: pointer;">QUIT</button>
+        </div>
+        <div class="btns2">
+            <button class="game" style="cursor: pointer;">LUCKYSHOT</button>
+            <button class="game" style="cursor: pointer;">RANKBOARD</button>
+            <button class="game" style="cursor: pointer;">REWARDS</button>
+        </div>
+        <div class="wrapper">
+            <div class="front">
+            </div>
+            <div class="back">
+            </div>
+        </div>
+        </div>
+        
+    <div class="container">
+        <header id="blackhead">Amount: <div id="blackamount"> $200 </div></header>
+      <h1 id="black" style="margin: 1px;">Black Jack</h1>
+      <h2 id="res" style="margin: 1px;">Want to play a round?</h2>
+      <h3 style="margin: 2px;" id="c">Cards:<div id="card"></div></h3>
+      <h3 style="margin: 2px;" id="s">Sum:<h1 id="sum"></h1> </h3>
+    <div  class="btn">
+    <button class="b" style="cursor: pointer;" id="blacknewgame">NEW GAME</button>
+    <button class="b" style="cursor: pointer;" id="newcard">NEW CARD</button>
+    <button class="b" style="cursor: pointer;" id="endgame">END GAME</button>
+    </div>
+    </div> 
+
+    <div id="Cards-grid">
+        <section id="g1" onclick="rotatecard()">
+            <div class="bottom"></div>
+            <div class="top"></div>
+        </section>
+        <section id="g2" onclick="rotatecard(event)">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </section>
+        <section id="g3" onclick="rotatecard(event)">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </section>
+        <section id="g4" onclick="rotatecard(event)">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </section>
+        <section id="g5" onclick="rotatecard(event)">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </section>
+        <section id="g6" onclick="rotatecard(event)">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </section>
+        <section id="g7" onclick="rotatecard(event)">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </section>
+        <section id="g8" onclick="rotatecard(event)">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </section>
+        <section id="g9" onclick="rotatecard(event)">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </section>
+        <section id="g10" onclick="rotatecard(event)">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </section>
+        <section id="g11" onclick="rotatecard(event)">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </section>
+        <section id="g12" onclick="rotatecard(event)">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </section>
+        <section id="g13" onclick="rotatecard(event)"> 
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </section>
+    </div>
+    <div class="mainpopup" style="display: none;">
+        <div class="popup">
+            <div id="icon"><sup>X</sup></div>
+            <div id="casino">
+                <img src="./images/black-main.avif" alt="MAIN">
+            </div>
+            <div id="ranges" class="f1">
+                <input value="20" min="0" type="range" max="100" class="input-range">
+            </div>
+            <div id="input-head">
+                <h2 id="input-range-value">$</h2>
+                <h2 id="value">20</h2>
+            </div>
+            <div id="flex2" class="f2">
+                <button id="incP"></button>
+                <button id="incM"></button>
+    
+            </div>
+            <button class="f3" id="bet" ><span> Bet</span></button>
+        </div>
+    
+    </div>
+<script  src="./blackjack.js"></script>
+</body>
+</html>
